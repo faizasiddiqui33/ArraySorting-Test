@@ -52,6 +52,21 @@ int sin(int x) {
 
 }
 
+/** Compute the cosine of an angle in degrees.
+
+    @param x The angle in degrees
+
+    @return The cosine of x
+
+*/
+
+int cos(int x) {
+
+  return sin(x + 90);
+
+}
+
+
 int main()
 
 {
