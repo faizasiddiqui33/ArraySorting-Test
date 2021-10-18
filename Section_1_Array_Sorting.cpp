@@ -19,6 +19,55 @@ using namespace std::chrono;
 /// values array for storing random values & i is for loop iterations
 long int values[10000000], i;
 
+/*****************************************************************************************************************************
+Module Name: Function to print the starting point of sort testing of Array
+Author: Faiza Fatma Siddiqui
+Date Created/Modified:17.10.2021
+Student ID: 200473896
+Purpose: CS 700 - Software Development Fundamentals - Assignment 2 
+ Function to notify the start of testing of Array
+    @param n The array size to be tested
+    @return null
+*****************************************************************************************************************************/
+void start_test(int n)
+
+{
+    cout << "*****Sort Testing for " << n << " array size STARTS NOW*****"<< endl;
+}
+
+/*****************************************************************************************************************************
+Module Name: Function to print the ending point of sort testing of Array
+Author: Faiza Fatma Siddiqui
+Date Created/Modified:17.10.2021
+Student ID: 200473896
+Purpose: CS 700 - Software Development Fundamentals - Assignment 2 
+ Function to notify the end of testing of Array
+    @param n The array size to be tested
+    @return null
+*****************************************************************************************************************************/
+void stop_test(int n)
+
+{
+    cout << "*****Sort Testing for " << n << " array size ENDS NOW*****"<< endl;
+    cout << endl;
+}
+
+/*****************************************************************************************************************************
+Module Name: Function to print lines
+Author: Faiza Fatma Siddiqui
+Date Created/Modified:17.10.2021
+Student ID: 200473896
+Purpose: CS 700 - Software Development Fundamentals - Assignment 2 
+ Function to print a line for well formatted output in tabular form
+    @param none
+    @return null
+*****************************************************************************************************************************/
+void line()
+{
+    cout << "--------------------------------------------------------------------------------------------------------------------------------------------\n" << endl;
+}
+
+
 int main()
 {
     /// Arrays for storing 10 time durations of hundred thousand elements in random, ordered and reverse form
