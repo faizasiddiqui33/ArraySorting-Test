@@ -179,6 +179,117 @@ int hundred_thousand_reverse()
     return duration.count();
 }
 
+/*****************************************************************************************************************************
+Module Name: Function for 1,000,000 random elements in an Array
+Author: Faiza Fatma Siddiqui
+Date Created/Modified:17.10.2021
+Student ID: 200473896
+Purpose: CS 700 - Software Development Fundamentals - Assignment 2 
+ Function for 1,000,000 random elements in an Array
+    @param none
+    @return the duration for 1,000,000 random elements in an Array
+*****************************************************************************************************************************/
+int million_elements_random_array()
+{
+    /// Initialize a vector of 1000000 elements
+    vector<int> values(1000000);
+
+    /// Generate random values
+    auto f = []() -> int
+    { return rand() % 1000000; };
+
+    /// Fill up the vector
+    generate(values.begin(), values.end(), f);
+
+    /// Get starting timepoint
+    auto start = high_resolution_clock::now();
+
+    /// Call the function sort() here
+    sort(values.begin(), values.end());
+
+    /// Get ending timepoint
+    auto stop = high_resolution_clock::now();
+
+    /// Get the duration by subtracting stop time from start time
+    auto duration = duration_cast<milliseconds>(stop - start);
+
+    /// Return the time taken in integer
+    return duration.count();
+}
+
+/*****************************************************************************************************************************
+Module Name: Function for 1,000,000 ordered elements in an Array
+Author: Faiza Fatma Siddiqui
+Date Created/Modified:17.10.2021
+Student ID: 200473896
+Purpose: CS 700 - Software Development Fundamentals - Assignment 2 
+ Function for 1,000,000 ordered elements in an Array
+    @param none
+    @return integer data type that stores the duration for 1,000,000 ordered elements in an Array
+*****************************************************************************************************************************/
+int million_elements_ordered_array()
+{
+    /// for loop for storing values in array
+    for (i = 1; i <= 1000000; i++)
+    {
+        values[i] = i;
+    }
+
+    /// Get number of elements in values[] array
+    int n = sizeof(values) / sizeof(values[0]);
+
+    /// Get starting timepoint
+    auto start = high_resolution_clock::now();
+
+    /// Call the sort() function here
+    sort(values, values + n);
+
+    /// Get ending timepoint
+    auto stop = high_resolution_clock::now();
+
+    /// Get the duration by subtracting stop time from start time
+    auto duration = duration_cast<milliseconds>(stop - start);
+
+    /// Return the time taken in integer data type
+    return duration.count();
+}
+
+/*****************************************************************************************************************************
+Module Name: Function for 1,000,000 reverse elements in an Array
+Author: Faiza Fatma Siddiqui
+Date Created/Modified:17.10.2021
+Student ID: 200473896
+Purpose: CS 700 - Software Development Fundamentals - Assignment 2 
+ Function for 1,000,000 reverse elements in an Array
+    @param none
+    @return integer data type that stores the duration for 1,000,000 reverse elements in an Array
+*****************************************************************************************************************************/
+int million_elements_reverse_array()
+{
+    /// for loop for storing 1000000 reverse elements in array
+    for (i = 1000000; i >= 1; i--)
+    {
+        values[i] = i;
+    }
+
+    /// Get number of elements in values[] array
+    int n = sizeof(values) / sizeof(values[0]);
+
+    /// Get starting timepoint
+    auto start = high_resolution_clock::now();
+
+    /// Call the function, here sort()
+    sort(values, values + n);
+
+    /// Get ending timepoint
+    auto stop = high_resolution_clock::now();
+
+    /// Get the duration by subtracting stop time from start time
+    auto duration = duration_cast<milliseconds>(stop - start);
+
+    /// Return the time taken in integer data type
+    return duration.count();
+}
 
 int main()
 {
