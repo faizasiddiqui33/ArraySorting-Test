@@ -248,7 +248,49 @@ int main()
 
     int n = 8, sample;
 
+   //testing sines
 
+    sample = sin(x1);
+
+    cout <<"sine: " <<x1 << " is: " << sin(x1) << " \texpected :   "<<sample;
+
+    test_sin(x1);
+
+    sample = sin(x3);
+
+    cout <<"sine: " <<x3 << " is: " << sin(x3) << "\texpected :  "<<sample;
+
+    test_sin(x3);
+
+    sample = sin(x5);
+
+    cout <<"sine: " <<x5 << " is: " << sin(x5) << "\texpected :  "<<sample;
+
+    test_sin(x5);
+
+    sample = sin(x9);
+
+    cout <<"sine: " <<x9 << " is: " << sin(x9) << "\texpected :"<<sample<<"\t";
+
+    test_sin(x9);
+
+    sample = sin(x7);
+
+    cout <<"sine: " <<x7 << " is: " << sin(x7) << "\texpected : "<<sample<<"\t";
+
+    test_sin(x7);
+
+    sample = sin(y1);
+
+    cout <<"sine: " <<y1 << " is: " << sin(y1) << " \texpected : "<<sample<<"\t";
+
+    test_sin(y1);
+
+    sample = sin(y7);
+
+    cout <<"sine: " <<y7 << " is: " << sin(y7) << "\texpected : "<<sample<<"\t";
+
+    test_sin(y7);
 
 
     return 0;
