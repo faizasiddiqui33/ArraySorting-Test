@@ -174,6 +174,21 @@ int test_sin(int n)
 
 }
 
+int test_cos(int n)
+
+{
+
+    int sample = cos(n);
+
+    if (cos(n)==sample)
+
+        cout<<"\tPass"<<endl;
+
+    else cout<<"\tFail"<<endl;
+
+}
+
+
 int main()
 
 {
