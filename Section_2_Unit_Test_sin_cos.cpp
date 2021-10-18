@@ -91,6 +91,34 @@ int cos(int x) {
 
 */
 
+
+/** Compute the sine of an angle in degrees
+
+    between 0 and 45.
+
+    pre: 0 <= x < 45
+
+    @param x The angle
+
+    @return The sine of x
+
+*/
+
+int sin0to45(int x) {
+
+  // Code to compute sin(x) for x between 0 and 45 degrees
+
+  // Evaluate a polynomial optimized for this range.
+
+  int coef[] = {
+
+    -81, -277, 1747900, -1600};
+
+  return polyEval(x, coef, 4) / 10000;
+
+}
+
+
 int polyEval(int x, int coef[], int n) {
 
   int result = 0;
