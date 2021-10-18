@@ -192,6 +192,63 @@ int test_cos(int n)
 int main()
 
 {
+  /*
+
+    for our white box testing, we use different range of values to test
+
+        the outputs of the different functions
+
+
+
+    */
+
+    //whitebox test cases
+
+
+
+    int x = 33;
+
+    int x1 = 5.9;
+
+    int x2 = 60;
+
+    int x3 = 100;
+
+    int x4 = 120;
+
+    int x5 = 90;
+
+    int x6 = 70;
+
+    int x7 = 45;
+
+    int x8 = 180;
+
+    int x9 = -240;
+
+    int y1 = 360;
+
+    int y2 = 67;
+
+    int y3 = 92;
+
+    int y4 = 69;
+
+    int y5 = -28;
+
+    int y6 = 40;
+
+    int y7 = 12;
+
+    int y8 = 37;
+
+    int y9 = -25.00;
+
+    int z1[] = {10, 0, 35, 45, 60, 90, 75};
+
+    int n = 8, sample;
+
+
 
 
     return 0;
