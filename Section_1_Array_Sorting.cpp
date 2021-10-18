@@ -404,7 +404,7 @@ int ten_million_elements_reverse_array()
 }
 int main()
 {
-    /// Arrays for storing 10 time durations of hundred thousand elements in random, ordered and reverse form
+        /// Arrays for storing 10 time durations of hundred thousand elements in random, ordered and reverse form
     int hundred_random[10], hundred_ordered[10], hundred_reverse[10];
 
     /// Arrays for storing 10 time durations of million elements in random, ordered and reverse form
@@ -412,6 +412,59 @@ int main()
 
     /// Arrays for storing 10 time durations of ten million elements in random, ordered and reverse form
     int ten_million_random[10], ten_million_ordered[10], ten_million_reverse[10];
+
+    /// Start the test for 100000 elements
+    start_test(100000);
+
+    /// for loop for storing 10 time durations of hundred thousand elements in random, ordered and reverse form
+    for (int i = 1; i <= 10; i++)
+    {
+        /// Storing 10 time durations of hundred thousand elements in random order
+        hundred_random[i] = hundred_thousand_random();
+
+        /// Storing 10 time durations of hundred thousand elements in ordered way
+        hundred_ordered[i] = hundred_thousand_ordered();
+
+        /// Storing 10 time durations of hundred thousand elements in reverse order
+        hundred_reverse[i] = hundred_thousand_reverse();
+    }
+    /// Stop the test for 100000 elements
+    stop_test(100000);
+
+    /// Start the test for 1000000 elements
+    start_test(1000000);
+
+    /// for loop for storing 10 time durations of million elements in random, ordered and reverse form
+    for (int i = 1; i <= 10; i++)
+    {
+        /// Storing 10 time durations of million elements in random order
+        million_random[i] = million_elements_random_array();
+
+        /// Storing 10 time durations of million elements in ordered way
+        million_ordered[i] = million_elements_ordered_array();
+
+        /// Storing 10 time durations of million elements in reverse order
+        million_reverse[i] = million_elements_reverse_array();
+    }
+
+    /// Stop the test for million elements
+    stop_test(1000000);
+
+    /// Start the test for 10000000 elements
+    start_test(10000000);
+
+    /// for loop for storing 10 time durations of ten million elements in random, ordered and reverse form
+    for (int i = 1; i <= 10; i++)
+    {
+        /// Storing 10 time durations of million elements in random order
+        ten_million_random[i] = tenmillion_elements_random_array();
+
+        /// Storing 10 time durations of million elements in ordered way
+        ten_million_ordered[i] = ten_million_elements_ordered_array();
+
+        /// Storing 10 time durations of million elements in reverse order
+        ten_million_reverse[i] = ten_million_elements_reverse_array();
+    }
 
     /// printing heading for well-formatted console output
     cout << "============== Printing Sort Duration in milliseconds for 10 Arrays of size 100,000 each ==============" << endl;
