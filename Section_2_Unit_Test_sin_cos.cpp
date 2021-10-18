@@ -160,6 +160,20 @@ int polyEval(int x, int coef[], int n) {
 
 }
 
+int test_sin(int n)
+
+{
+
+    int sample = sin(n);
+
+    if (sin(n)==sample)
+
+        cout<<"\tPass"<<endl;
+
+    else cout<<"\tFail"<<endl;
+
+}
+
 int main()
 
 {
