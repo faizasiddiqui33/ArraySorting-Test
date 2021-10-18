@@ -1,3 +1,16 @@
+/*****************************************************************************************************************************
+Module Name: White-box texting of sine and cosine of numbers
+Author: Faiza Fatma Siddiqui
+Date Created/Modified:17.10.2021
+Student ID: 200473896
+Purpose: CS 700 - Software Development Fundamentals - Assignment 2 
+Description: 
+- This program determines the effects of size and data order of the array by measuring the time taken when 
+  array sort operations are performed on an array of integers. 
+- It also tests ten arrays each time, when array is in random order, increasing order and reverse order with 
+  three different array sizes i.e. n=100000, 1000000, 10000000 
+- It prints the time taken by the arrays in a well-formatted console output 
+*****************************************************************************************************************************/
 
 ///algorithms library defines functions for searching, sorting, counting, manipulating, etc. that operate on ranges of elements
 #include <algorithm>
@@ -33,7 +46,7 @@ Purpose: CS 700 - Software Development Fundamentals - Assignment 2
 void start_test(int n)
 
 {
-    cout << "*****Sort Testing for " << n << " array size STARTS NOW*****"<< endl;
+    cout << "*****Sort Testing for " << n << " array size STARTS NOW*****" << endl;
 }
 
 /*****************************************************************************************************************************
@@ -49,7 +62,7 @@ Purpose: CS 700 - Software Development Fundamentals - Assignment 2
 void stop_test(int n)
 
 {
-    cout << "*****Sort Testing for " << n << " array size ENDS NOW*****"<< endl;
+    cout << "*****Sort Testing for " << n << " array size ENDS NOW*****" << endl;
     cout << endl;
 }
 
@@ -65,7 +78,8 @@ Purpose: CS 700 - Software Development Fundamentals - Assignment 2
 *****************************************************************************************************************************/
 void line()
 {
-    cout << "--------------------------------------------------------------------------------------------------------------------------------------------\n" << endl;
+    cout << "--------------------------------------------------------------------------------------------------------------------------------------------\n"
+         << endl;
 }
 
 /*****************************************************************************************************************************
@@ -101,7 +115,7 @@ int hundred_thousand_random()
 
     /// Get the duration by subtracting stop time from start time
     auto duration = duration_cast<milliseconds>(stop - start);
-    
+
     /// Return the time taken in integer
     return duration.count();
 }
@@ -139,10 +153,9 @@ int hundred_thousand_ordered()
     /// Get the duration by subtracting stop time from start time
     auto duration = duration_cast<milliseconds>(stop - start);
 
-   /// Return the time taken in integer
+    /// Return the time taken in integer
     return duration.count();
 }
-
 
 /*****************************************************************************************************************************
 Module Name: Function for 100,000 reverse elements in an Array
@@ -155,7 +168,7 @@ Purpose: CS 700 - Software Development Fundamentals - Assignment 2
     @return the duration for 100,000 reverse elements in an Array
 *****************************************************************************************************************************/
 int hundred_thousand_reverse()
-{ 
+{
     /// for loop for reversing values in array
     for (i = 100000; i >= 1; i--)
     {
@@ -342,7 +355,7 @@ Purpose: CS 700 - Software Development Fundamentals - Assignment 2
     @return integer data type that stores the duration for 10,000,000 ordered elements in an Array
 *****************************************************************************************************************************/
 int ten_million_elements_ordered_array()
-{   
+{
     /// for loop for storing 10000000 ordered elements in array
     for (i = 1; i <= 10000000; i++)
     {
@@ -486,7 +499,7 @@ int main()
 
     /// printing a line for well-formatted console output
     line();
-    
+
     /// Printing the name of test, i.e. the order of the Array - Random
     cout << "|RANDOM \t|";
 
@@ -525,8 +538,6 @@ int main()
 
     /// printing heading for well-formatted console output
     cout << "============= Printing Duration in milliseconds for 10 Arrays of size 1,000,000 each ==============" << endl;
-
-    //display();
 
     /// printing a line for well-formatted console output
     line();
@@ -569,8 +580,6 @@ int main()
 
     /// printing heading for well-formatted console output
     cout << "============== Printing Duration in milliseconds for 10 Arrays of size 10,000,000 each ==============" << endl;
-
-    //display();
 
     /// printing a line for well-formatted console output
     line();
