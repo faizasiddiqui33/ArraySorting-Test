@@ -292,7 +292,64 @@ int main()
 
     test_sin(y7);
 
+//testing cosines
 
+    sample=cos(x1);
+
+    cout <<"cosine: " << x1 << " is: " << cos(x1) << "\texpected : "<<sample<<"\t";
+
+    test_cos(x1);
+
+    sample=cos(x2);
+
+    cout <<"cosine: " << x2 << " is: " << cos(x2) << "\texpected : "<<sample<<"\t";
+
+    test_cos(x2);
+
+    sample=cos(y2);
+
+    cout <<"cosine: " << y2 << " is: " << cos(y2) << "\texpected : "<<sample<<"\t";
+
+    test_cos(y2);
+
+    sample=cos(y7);
+
+    cout <<"cosine: " << y7 << " is: " << cos(y7) << "\texpected : "<<sample<<"\t";
+
+    test_cos(y7);
+
+    sample=cos(y9);
+
+    cout <<"cosine: " << y9 << " is: " << cos(y9) << "\texpected : "<<sample<<"\t";
+
+    test_cos(y9);
+
+    sample=cos(y3);
+
+    cout <<"cosine: " << y3 << " is: " << cos(y3) << "\texpected : "<<sample<<"\t";
+
+    test_cos(y3);
+
+    sample=cos(y6);
+
+    cout <<"cosine: " << y6 << " is: " << cos(y6) << "\texpected : "<<sample<<"\t";
+
+    test_cos(y6);
+
+    sample=cos(y5);
+
+    cout <<"cosine: " << y5 << " is: " << cos(y5) << "\texpected : "<<sample<<"\t";
+
+    test_cos(y5);
+
+    sample=cos(x9);
+
+    cout <<"cosine: " << x9 << " is: " << cos(x9) << "\texpected : "<<sample<<"\t";
+
+    test_cos(x9);
+
+    //testing int sin0to45
+    
     return 0;
 
 }
